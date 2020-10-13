@@ -1,0 +1,49 @@
+/* Theme */
+
+header {
+    background: #EDEDED;
+}
+
+main {
+	background: #EDEDED;
+	color: rgb(33, 38, 39)
+	/*color: #4B5658;*/
+}
+
+.icons-social a {
+	color: rgb(33, 38, 39)
+	/* color: #4B5658; */
+}
+
+.icons-social a svg path{
+	fill: #4B5658;
+}
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /* background-color: #333; */
+  }
+  
+  ul.topnav li {float: right;}
+  
+  ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  ul.topnav li a:hover:not(.active) {background-color: rgb(33, 38, 39);}
+  
+  ul.topnav li a.active {background-color: rgb(75, 86, 88);}
+  
+  /*ul.topnav li.right {float: right;}*/
+  
+  @media screen and (max-width: 600px) {
+    ul.topnav li.right, 
+    ul.topnav li {float: none;}
+  }

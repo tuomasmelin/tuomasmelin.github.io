@@ -1,0 +1,16 @@
+/* Theme */
+
+main {
+	background: url(../../img/smoke.png) #EDEDED;
+	color: rgb(33, 38, 39)
+	/*color: #4B5658;*/
+}
+
+.icons-social a {
+	color: rgb(33, 38, 39)
+	/* color: #4B5658; */
+}
+
+.icons-social a svg path{
+	fill: #4B5658;
+}
