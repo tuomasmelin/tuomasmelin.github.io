@@ -1,2 +1,2 @@
 # tuomasmelin.github.io
-Static site for blog
+Landing page for my personal site
