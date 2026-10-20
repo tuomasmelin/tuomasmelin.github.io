@@ -1,0 +1,87 @@
+/* Shared design tokens for the landing page and the CV */
+
+:root {
+	--bg: #EDEDED;
+	--surface: #FFFFFF;
+	--text: #212627;
+	--muted: #4B5658;
+	--subtle: #7A8486;
+	--border: #DADDDE;
+	--accent: #0F766E;
+
+	--inverse-bg: #212627;
+	--inverse-text: #EDEDED;
+	--inverse-muted: rgba(237, 237, 237, 0.65);
+
+	--font-display: 'Reem Kufi', sans-serif;
+	--font-body: 'Roboto', system-ui, -apple-system, sans-serif;
+
+	--radius: 14px;
+	--shadow: 0 1px 2px rgba(0, 0, 0, .04), 0 12px 32px rgba(0, 0, 0, .07);
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--bg: #161A1B;
+		--surface: #1E2324;
+		--text: #E6E9E9;
+		--muted: #AEB6B8;
+		--subtle: #858F91;
+		--border: #2F3638;
+		--accent: #5EC4B6;
+		--inverse-bg: #0F1213;
+	}
+}
+
+body {
+	margin: 0;
+	background: var(--bg);
+	color: var(--text);
+	font-family: var(--font-body);
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+a {
+	color: inherit;
+	transition: color .2s ease;
+}
+
+a:hover {
+	color: var(--accent);
+}
+
+/* Small shared nav linking the two pages */
+.site-nav {
+	display: flex;
+	justify-content: flex-end;
+	gap: 1.5rem;
+	max-width: 1040px;
+	margin: 0 auto;
+	padding: 1rem;
+	font-size: .9rem;
+}
+
+.site-nav a {
+	text-decoration: none;
+	color: var(--muted);
+}
+
+.site-nav a:hover {
+	color: var(--accent);
+}
+
+.site-nav a[aria-current="page"] {
+	color: var(--text);
+	font-weight: 500;
+}
+
+/* Landing page: nav floats over the full-height main */
+.site-nav--overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	max-width: none;
+	padding: 1.25rem 2rem;
+}

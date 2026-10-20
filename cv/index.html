@@ -1,26 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic' rel='stylesheet' type='text/css'>
-
-    <link rel="stylesheet" type="text/css" href="theme/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="theme/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="theme/css/main-6.css" />
-
-
-
-
-
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="robots" content="" />
-
-
     <meta name="author" content="Tuomas Melin" />
-    <meta name="description" content="" />
-    <title>Resume</title>
+    <meta name="description" content="CV of Tuomas Melin, data architect and co-founder at Recordly." />
+    <title>Tuomas Melin | CV</title>
+
+    <link rel="icon" href="../favicon.ico" type="image/png" />
+    <link href="https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@400;600&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/tokens.css" />
+    <link rel="stylesheet" href="cv.css" />
+
     <script>
         !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init capture register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagResult isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey getNextSurveyStep identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty createPersonProfile opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing debug".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
         posthog.init('phc_3KzAi4G9zLHTOCVRVSMKNtMqtVdobOuno0aqh0YECiS', {
@@ -30,257 +23,196 @@
     </script>
 </head>
 
-<body id="index" class="home">
+<body>
+
+<nav class="site-nav"><a href="../">Home</a><a href="./" aria-current="page">CV</a></nav>
 
 <div class="wrapper">
-<!-- Use icons from fontawesome when you are adding new item in the contact list  -->             
- 
-<div class="sidebar-wrapper">
+
+<aside class="sidebar-wrapper">
     <div class="profile-container">
-        <img class="profile-img" src="theme/images/avatar.png" alt="profile picture" />
+        <img class="profile-img" src="theme/images/avatar.jpg" alt="Tuomas Melin" width="112" height="112" />
         <h1 class="name">Tuomas Melin</h1>
-        <h3 class="tagline">Senior Consultant</h3>
+        <p class="tagline">Senior Data Professional</p>
     </div><!--//profile-container-->
-    
-    <div class="contact-container container-block">
-        <ul class="list-unstyled contact-list">
-           
-            <li class="email"><i class="fa fa-envelope"></i><a href="mailto: tuomas.melin at iki.fi">tuomas.melin at iki.fi</a></li>
-            <!--
-            <li class="phone"><i class="fa fa-phone"></i><a href="tel:012 345 6789">012 345 6789</a></li>
--->
-            
-            <li class="website"><i class="fa fa-globe"></i><a href="http://tuomasmelin.com" target="_blank">tuomasmelin.com</a></li>
-            
-            <li class="linkedin"><i class="fa fa-linkedin"></i><a href="https://in.linkedin.com/in/tuomasmelin" target="_blank">linkedin.com/in/tuomasmelin</a></li>
-            
-            <li class="github"><i class="fa fa-github"></i><a href="http://github.com/tuomasmelin" target="_blank">github.com/tuomasmelin</a></li>
-            
-            <li class="twitter"><i class="fa fa-twitter"></i><a href="https://twitter.com/@tuomasmelin" target="_blank">@tuomasmelin</a></li>
-            
+
+    <div class="contact-container">
+        <ul class="contact-list">
+            <li><i class="fas fa-envelope"></i><a href="mailto:tuomas.melin@iki.fi">tuomas.melin at iki.fi</a></li>
+            <li><i class="fas fa-globe"></i><a href="https://tuomasmelin.com" target="_blank">tuomasmelin.com</a></li>
+            <li><i class="fab fa-linkedin"></i><a href="https://www.linkedin.com/in/tuomasmelin" target="_blank">linkedin.com/in/tuomasmelin</a></li>
+            <li><i class="fab fa-github"></i><a href="https://github.com/tuomasmelin" target="_blank">github.com/tuomasmelin</a></li>
+            <li><i class="fab fa-twitter"></i><a href="https://twitter.com/tuomasmelin" target="_blank">@tuomasmelin</a></li>
         </ul>
     </div><!--//contact-container-->
-<div class="education-container container-block">
-<h2 class="container-block-title">Education</h2>
-    <div class="item">
-	    <h4 class="degree">MSc in Business Information Management</h4>
-	    <h5 class="meta">Tampere University of Technology (TUT)</h5>
-	    <div class="time">2005 - 2011</div>
-	</div><!--//item-->
-</div><!--//education-container-->
-<div class="languages-container container-block">
-	<h2 class="container-block-title">Languages</h2>
-	<ul class="list-unstyled interests-list">
-		<li>Finnish <span class="lang-desc">(Native)</span></li>
-		<li>English <span class="lang-desc">(Proficient)</span></li>
-	</ul>
-</div><!--//interests-->
-<div class="interests-container container-block">
-	<h2 class="container-block-title">Interests</h2>
-	<ul class="list-unstyled interests-list">
-		   <li>Football</li>
-		   <li>Family</li>
-		   <li>Data business</li>
-	</ul>
-</div><!--//interests-->
-    
-</div><!--//sidebar-wrapper-->    <div class="main-wrapper">
-       
-<section class="section summary-section">
-<h2 class="section-title"><i class="fa fa-user"></i>Career Profile</h2>
-<div class="summary">
-    <p>I am an experienced data professional who likes working with both the cultural and technical aspects of data. I currently work as a senior data consultant at Recordly.</p>
-</div><!--//summary-->
-</section><!--//section-->
-                    
-<section class="section experiences-section">
-    <h2 class="section-title"><i class="fa fa-briefcase"></i>Job experience</h2>
-        <div class="item">
-            <div class="meta">
-                <div class="upper-row">
-                    <h3 class="job-title">Co-Founder & Data Architect</h3>
-                    <div class="time">August 2021 - Present</div>
-                </div><!--//upper-row-->
-                <div class="company">Recordly Oy</div>
-            </div><!--//meta-->
-            <div class="details">
-                <p>I get to work with bright minds and ambitious customers as we're building a high-end data consultancy.</p>
-            </div><!--//details-->
-        </div><!--//item-->
-        <div class="item">
-            <div class="meta">
-                <div class="upper-row">
-                    <h3 class="job-title">Senior Data Engineer</h3>
-                    <div class="time">January 2021 - August 2021</div>
-                </div><!--//upper-row-->
-                <div class="company">Futurice Oy</div>
-            </div><!--//meta-->
-            <div class="details">
-                <p>I worked to improve Futurice data offering, sales and recruitment. I also worked with a few intresting customer assignments.</p>
-            </div><!--//details-->
-        </div><!--//item-->
-        <div class="item">
-            <div class="meta">
-                <div class="upper-row">
-                    <h3 class="job-title">People Lead | Senior Data Engineer</h3>
-                    <div class="time">June 2016 - January 2021</div>
-                </div><!--//upper-row-->
-                <div class="company">Solita Oy</div>
-            </div><!--//meta-->
-            <div class="details">
-                <p>As a people lead I helped my team grow in their roles and paths in Solita and also managed internal development efforts. Recruitment has also been a part of the job. As a consultant I worked with our biggest customerships in different roles, such as Solutions Architect, Product Owner, Data Engineer etc.</p>
-            </div><!--//details-->
-        </div><!--//item-->
-        <div class="item">
-            <div class="meta">
-                <div class="upper-row">
-                    <h3 class="job-title">Data Scientist</h3>
-                    <div class="time">May 2014 - May 2016</div>
-                </div><!--//upper-row-->
-                <div class="company">Solita Oy</div>
-            </div><!--//meta-->
-            <div class="details">
-                <p>We started an internal start-up focusing on bleeding edge data solutions both in terms of tooling (cloud services, big data tools) and what we were solving (Big Data, Data Science, Machine Learning). My role was doing pre-sales,  PoC's and some long-term customer cases too. I worked primarily on the AWS.</p>
-            </div><!--//details-->
-        </div><!--//item-->
-        <div class="item">
-            <div class="meta">
-                <div class="upper-row">
-                    <h3 class="job-title">Business Intelligence Specialist</h3>
-                    <div class="time">August 2012 - April 2014</div>
-                </div><!--//upper-row-->
-                <div class="company">Solita Oy</div>
-            </div><!--//meta-->
-            <div class="details">
-                <p>I transitioned to the world of BI/DW within a customer case I was working on. I used traditional ETL tools such as SAP BODI, SSIS, Talend and reporting tools like Cognos. During this time we also started our first AWS assignments. There I worked as a lead developer with Java and Vanilla JS.</p>
-            </div><!--//details-->
-        </div><!--//item-->
-        <div class="item">
-            <div class="meta">
-                <div class="upper-row">
-                    <h3 class="job-title">Software Developer</h3>
-                    <div class="time">March 2010 - July 2012</div>
-                </div><!--//upper-row-->
-                <div class="company">Solita Oy</div>
-            </div><!--//meta-->
-            <div class="details">
-                <p>I worked in our company's largest project at the time: a tailormade ERP with a huge scope. I worked on maintenance and end-user support at first - gradually shifting to new development as I learned the system. Tech stack was the classic Java EE of the time: Java 6, Spring, JSP, Hibernate, MuleSoft for integrations and Oracle as the DB.</p>
-            </div><!--//details-->
-        </div><!--//item-->
-</section><!--//section-->
-                    
-<section class="section projects-section">
-    <h2 class="section-title"><i class="fa fa-archive"></i>Projects</h2>
-    <div class="intro">
-        <p>Some important projects I've been a part of:</p>
-    </div><!--//intro-->
-        <div class="item">
-            <span class="project-title"><a href="#hook">07/2025 - Ongoing: Metadata layer (Finnish Retail client)</a></span> - <span class="project-tagline">I work as a lead in a metadata standardisation project.</span>
-        </div><!--//item-->
-        <div class="item">
-            <span class="project-title"><a href="#hook">04/2024 - Ongoing: R&D process optimisation (Finnish Energy client)</a></span> - <span class="project-tagline">I work as a lead in a R&D data collection project.</span>
-        </div><!--//item-->
-        <div class="item">
-            <span class="project-title"><a href="#hook">02/2021 - 05/2023: Azure Business Platform (Finnish Retail client)</a></span> - <span class="project-tagline">I worked as a project lead and developer in a collection of data-intensive projects.</span>
-        </div><!--//item-->
-        <div class="item">
-            <span class="project-title"><a href="#hook">08/2019 - 01/2021: Azure Data Platform (Finnish Forest 
-Industry 
-client)</a></span> - <span class="project-tagline">I worked as a Lead Architect in a large Data Platform project. The platform is developed in Azure using native components and Snowflake as the DW. We are also delivering trainings and management initiatives to help the customer become data driven on a large scale.</span>
-        </div><!--//item-->
-        <div class="item">
-            <span class="project-title"><a href="#hook">04/2018 -  04/2020: UPM Data Champions</a></span> - <span class="project-tagline">I was leading our training efforts at UPM. We did two 9-month programs with almost 50 participants altogether. The program consisted of three modules and the participants learned programming and data processing in Python, Machine Learning and some DataOps + MLOps practices.</span>
-        </div><!--//item-->
-        <div class="item">
-            <span class="project-title"><a href="#hook">12/2016 - 10/2017: Industrial Internet Platform (Finnish industry client)</a></span> - <span class="project-tagline">I worked as a Product Owner on a large Industrial Internet initiative. We worked on different business solutions with over 20 developers. My role was to define and refine business needs for the team to work on. I reported to the project steering group.</span>
-        </div><!--//item-->
-        <div class="item">
-            <span class="project-title"><a href="#hook">01/2013 - 08/2015: Sanoma Big Data</a></span> - <span class="project-tagline">My first AWS case was also a very good project for future learnings. We built a solution to analyse user engagement and other KPIs across Sanoma's sites. I created the calculations done in EMR (Java) and also important features to the tracking part in vanilla JS.</span>
-        </div><!--//item-->
-</section><!--//section-->
-                    
-<section class="skills-section section">
-    <h2 class="section-title"><i class="fa fa-rocket"></i>Skills &amp; Proficiency</h2>
-    <div class="skillset">        
-            <div class="item">
-                <h3 class="level-title">People & Culture</h3>
-                <div class="level-bar">
-                    <div class="level-bar-inner" data-level="90%">
-                    </div>                                      
-                </div><!--//level-bar-->                                 
-            </div><!--//item-->
-            <div class="item">
-                <h3 class="level-title">Python</h3>
-                <div class="level-bar">
-                    <div class="level-bar-inner" data-level="85%">
-                    </div>                                      
-                </div><!--//level-bar-->                                 
-            </div><!--//item-->
-            <div class="item">
-                <h3 class="level-title">AWS</h3>
-                <div class="level-bar">
-                    <div class="level-bar-inner" data-level="85%">
-                    </div>                                      
-                </div><!--//level-bar-->                                 
-            </div><!--//item-->
-            <div class="item">
-                <h3 class="level-title">Azure</h3>
-                <div class="level-bar">
-                    <div class="level-bar-inner" data-level="85%">
-                    </div>                                      
-                </div><!--//level-bar-->                                 
-            </div><!--//item-->
-            <div class="item">
-                <h3 class="level-title">Javascript &amp; NodeJS</h3>
-                <div class="level-bar">
-                    <div class="level-bar-inner" data-level="75%">
-                    </div>                                      
-                </div><!--//level-bar-->                                 
-            </div><!--//item-->
-            <div class="item">
-                <h3 class="level-title">SQL</h3>
-                <div class="level-bar">
-                    <div class="level-bar-inner" data-level="85%">
-                    </div>                                      
-                </div><!--//level-bar-->                                 
-            </div><!--//item-->
-            <div class="item">
-                <h3 class="level-title">Snowflake</h3>
-                <div class="level-bar">
-                    <div class="level-bar-inner" data-level="80%">
-                    </div>                                      
-                </div><!--//level-bar-->                                 
-            </div><!--//item-->
-            <div class="item">
-                <h3 class="level-title">dbt</h3>
-                <div class="level-bar">
-                    <div class="level-bar-inner" data-level="75%">
-                    </div>                                      
-                </div><!--//level-bar-->                                 
-            </div><!--//item-->
-            <div class="item">
-                <h3 class="level-title">Terraform</h3>
-                <div class="level-bar">
-                    <div class="level-bar-inner" data-level="75%">
-                    </div>                                      
-                </div><!--//level-bar-->                                 
-            </div><!--//item-->
-    </div>  
-</section><!--//skills-section-->
-        
-    </div><!--//main-body-->
-</div>
 
-    <footer class="footer">
-        <div class="text-center">
-            <small class="copyright">Content by me. Props where they are due:</small>
-            <small class="copyright">Designed with <i class="fa fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a> for developers</small>
-            <br>
-            <small class="copyright">Ported to Pelican with <i class="fa fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Suhaib Khan</a></small>
-        </div><!--//container-->
-    </footer><!--//footer-->
-    <script type="text/javascript" src="theme/js/jquery-1.11.3.min.js"></script>
-    <script type="text/javascript" src="theme/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="theme/js/main.js"></script>
+    <div class="education-container">
+        <h2 class="container-block-title">Education</h2>
+        <div class="item">
+            <h4 class="degree">MSc in Business Information Management</h4>
+            <h5 class="meta">Tampere University of Technology (TUT)</h5>
+            <div class="time">2005 – 2011</div>
+        </div><!--//item-->
+    </div><!--//education-container-->
+
+    <div class="languages-container">
+        <h2 class="container-block-title">Languages</h2>
+        <ul class="interests-list">
+            <li>Finnish <span class="lang-desc">(Native)</span></li>
+            <li>English <span class="lang-desc">(Proficient)</span></li>
+        </ul>
+    </div><!--//languages-->
+
+    <div class="interests-container">
+        <h2 class="container-block-title">Interests</h2>
+        <ul class="interests-list">
+            <li>Football</li>
+            <li>Family</li>
+            <li>Data business</li>
+        </ul>
+    </div><!--//interests-->
+</aside><!--//sidebar-wrapper-->
+
+<main class="main-wrapper">
+
+<section class="section summary-section">
+    <h2 class="section-title">Career Profile</h2>
+    <div class="summary">
+        <p>I am an experienced data professional who likes working with both the cultural and technical aspects of data. I currently work as a senior data consultant at Recordly. Being a founding member of growth-oriented data consultancy has taught me a lot about the business side of data, too.</p>
+    </div><!--//summary-->
+</section><!--//section-->
+
+<section class="section experiences-section">
+    <h2 class="section-title">Experience</h2>
+    <div class="item">
+        <div class="upper-row">
+            <h3 class="job-title">Co-Founder &amp; Data Architect</h3>
+            <div class="time">Aug 2021 – Present</div>
+        </div>
+        <div class="company">Recordly Oy</div>
+        <div class="details">
+            <p>I get to work with bright minds and ambitious customers as we're building a high-end data consultancy.</p>
+        </div>
+    </div><!--//item-->
+    <div class="item">
+        <div class="upper-row">
+            <h3 class="job-title">Senior Data Engineer</h3>
+            <div class="time">Jan 2021 – Aug 2021</div>
+        </div>
+        <div class="company">Futurice Oy</div>
+        <div class="details">
+            <p>I worked to improve Futurice data offering, sales and recruitment. I also worked with a few interesting customer assignments.</p>
+        </div>
+    </div><!--//item-->
+    <div class="item">
+        <div class="upper-row">
+            <h3 class="job-title">People Lead | Senior Data Engineer</h3>
+            <div class="time">Jun 2016 – Jan 2021</div>
+        </div>
+        <div class="company">Solita Oy</div>
+        <div class="details">
+            <p>As a people lead I helped my team grow in their roles and paths in Solita and also managed internal development efforts. Recruitment has also been a part of the job. As a consultant I worked with our biggest customerships in different roles, such as Solutions Architect, Product Owner, Data Engineer etc.</p>
+        </div>
+    </div><!--//item-->
+    <div class="item">
+        <div class="upper-row">
+            <h3 class="job-title">Data Scientist</h3>
+            <div class="time">May 2014 – May 2016</div>
+        </div>
+        <div class="company">Solita Oy</div>
+        <div class="details">
+            <p>We started an internal start-up focusing on bleeding edge data solutions both in terms of tooling (cloud services, big data tools) and what we were solving (Big Data, Data Science, Machine Learning). My role was doing pre-sales, PoCs and some long-term customer cases too. I worked primarily on AWS.</p>
+        </div>
+    </div><!--//item-->
+    <div class="item">
+        <div class="upper-row">
+            <h3 class="job-title">Business Intelligence Specialist</h3>
+            <div class="time">Aug 2012 – Apr 2014</div>
+        </div>
+        <div class="company">Solita Oy</div>
+        <div class="details">
+            <p>I transitioned to the world of BI/DW within a customer case I was working on. I used traditional ETL tools such as SAP BODI, SSIS, Talend and reporting tools like Cognos. During this time we also started our first AWS assignments. There I worked as a lead developer with Java and Vanilla JS.</p>
+        </div>
+    </div><!--//item-->
+    <div class="item">
+        <div class="upper-row">
+            <h3 class="job-title">Software Developer</h3>
+            <div class="time">Mar 2010 – Jul 2012</div>
+        </div>
+        <div class="company">Solita Oy</div>
+        <div class="details">
+            <p>I worked in our company's largest project at the time: a tailormade ERP with a huge scope. I worked on maintenance and end-user support at first - gradually shifting to new development as I learned the system. Tech stack was the classic Java EE of the time: Java 6, Spring, JSP, Hibernate, MuleSoft for integrations and Oracle as the DB.</p>
+        </div>
+    </div><!--//item-->
+</section><!--//section-->
+
+<section class="section projects-section">
+    <h2 class="section-title">Selected Projects</h2>
+    <div class="project-grid">
+        <div class="item">
+            <div class="project-time">07/2025 – Ongoing</div>
+            <h3 class="project-title">Metadata layer <span class="client">Finnish retail client</span></h3>
+            <p>I work as a lead in a metadata standardisation project.</p>
+        </div><!--//item-->
+        <div class="item">
+            <div class="project-time">04/2024 – Ongoing</div>
+            <h3 class="project-title">R&amp;D process optimisation <span class="client">Finnish energy client</span></h3>
+            <p>I work as a lead in an R&amp;D data collection project.</p>
+        </div><!--//item-->
+        <div class="item">
+            <div class="project-time">02/2021 – 05/2023</div>
+            <h3 class="project-title">Azure Business Platform <span class="client">Finnish retail client</span></h3>
+            <p>I worked as a project lead and developer in a collection of data-intensive projects.</p>
+        </div><!--//item-->
+        <div class="item">
+            <div class="project-time">08/2019 – 01/2021</div>
+            <h3 class="project-title">Azure Data Platform <span class="client">Finnish forest industry client</span></h3>
+            <p>I worked as a Lead Architect in a large Data Platform project. The platform is developed in Azure using native components and Snowflake as the DW. We are also delivering trainings and management initiatives to help the customer become data driven on a large scale.</p>
+        </div><!--//item-->
+        <div class="item">
+            <div class="project-time">04/2018 – 04/2020</div>
+            <h3 class="project-title">UPM Data Champions <span class="client">UPM</span></h3>
+            <p>I was leading our training efforts at UPM. We did two 9-month programs with almost 50 participants altogether. The program consisted of three modules and the participants learned programming and data processing in Python, Machine Learning and some DataOps + MLOps practices.</p>
+        </div><!--//item-->
+        <div class="item">
+            <div class="project-time">12/2016 – 10/2017</div>
+            <h3 class="project-title">Industrial Internet Platform <span class="client">Finnish industry client</span></h3>
+            <p>I worked as a Product Owner on a large Industrial Internet initiative. We worked on different business solutions with over 20 developers. My role was to define and refine business needs for the team to work on. I reported to the project steering group.</p>
+        </div><!--//item-->
+        <div class="item">
+            <div class="project-time">01/2013 – 08/2015</div>
+            <h3 class="project-title">Sanoma Big Data <span class="client">Sanoma</span></h3>
+            <p>My first AWS case was also a very good project for future learnings. We built a solution to analyse user engagement and other KPIs across Sanoma's sites. I created the calculations done in EMR (Java) and also important features to the tracking part in vanilla JS.</p>
+        </div><!--//item-->
+    </div><!--//project-grid-->
+</section><!--//section-->
+
+<section class="section skills-section">
+    <h2 class="section-title">Skills</h2>
+    <div class="skill-group">
+        <h3>Leadership</h3>
+        <ul class="tags"><li>People &amp; Culture</li><li>Business &amp; Numbers</li></ul>
+    </div>
+    <div class="skill-group">
+        <h3>Data</h3>
+        <ul class="tags"><li>SQL</li><li>Snowflake</li><li>dbt</li><li>Python</li></ul>
+    </div>
+    <div class="skill-group">
+        <h3>Cloud &amp; Infra</h3>
+        <ul class="tags"><li>AWS</li><li>Azure</li><li>Terraform</li></ul>
+    </div>
+    <div class="skill-group">
+        <h3>Development</h3>
+        <ul class="tags"><li>JavaScript &amp; Node.js</li></ul>
+    </div>
+</section><!--//skills-section-->
+
+</main><!--//main-wrapper-->
+</div><!--//wrapper-->
+
+<footer class="footer">
+    <small class="copyright">Content by me. Layout originally based on the Orbit theme <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>, ported to Pelican by Suhaib Khan.</small>
+</footer><!--//footer-->
+
 </body>
 </html>
