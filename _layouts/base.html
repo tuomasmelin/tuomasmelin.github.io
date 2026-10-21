@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="{{ site.author }}" />
+    <meta name="description" content="{{ page.description | default: page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 }}" />
+    <title>{{ page.title }} | {{ site.title }}</title>
+
+    <link rel="icon" href="{{ '/favicon.ico' | relative_url }}" type="image/png" />
+    <link href="https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@400;600&family=Roboto:wght@300;400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ '/css/tokens.css' | relative_url }}" />
+    <link rel="stylesheet" href="{{ '/css/til.css' | relative_url }}" />
+    {% feed_meta %}
+
+    {% include analytics.html %}
+</head>
+
+<body>
+
+<nav class="site-nav">
+    <a href="{{ '/' | relative_url }}">Home</a>
+    <a href="{{ '/cv/' | relative_url }}">CV</a>
+    <a href="{{ '/til/' | relative_url }}" aria-current="page">TIL</a>
+</nav>
+
+<main class="til-wrapper">
+{{ content }}
+</main>
+
+</body>
+</html>

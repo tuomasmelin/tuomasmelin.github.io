@@ -1,0 +1,41 @@
+---
+layout: base
+---
+<article class="post">
+    <a class="back-link" href="{{ '/til/' | relative_url }}"><i class="fas fa-arrow-left"></i> All TILs</a>
+
+    <header class="post-header">
+        <h1 class="post-title">{{ page.title }}</h1>
+        <div class="post-meta">
+            <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%-d %B %Y" }}</time>
+            {% for tag in page.tags %}<span class="tag">{{ tag }}</span>{% endfor %}
+        </div>
+    </header>
+
+    <div class="prose">
+{{ content }}
+    </div>
+
+    {% if page.series %}
+    {% assign series_posts = site.posts | where: "series", page.series | sort: "date" %}
+    <aside class="series-box">
+        <h2>{{ page.series }}</h2>
+        <ol>
+            {% for post in series_posts %}
+            <li>{% if post.url == page.url %}<span aria-current="page">{{ post.title }}</span>{% else %}<a href="{{ post.url | relative_url }}">{{ post.title }}</a>{% endif %}</li>
+            {% endfor %}
+        </ol>
+    </aside>
+    {% endif %}
+
+    {% if page.previous or page.next %}
+    <nav class="post-pager">
+        {% if page.previous %}
+        <a class="pager-prev" href="{{ page.previous.url | relative_url }}"><span>Older</span>{{ page.previous.title }}</a>
+        {% endif %}
+        {% if page.next %}
+        <a class="pager-next" href="{{ page.next.url | relative_url }}"><span>Newer</span>{{ page.next.title }}</a>
+        {% endif %}
+    </nav>
+    {% endif %}
+</article>

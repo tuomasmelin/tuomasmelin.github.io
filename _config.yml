@@ -1,0 +1,33 @@
+title: Tuomas Melin
+description: Short notes on things I've learned about data, cloud and tooling.
+author: Tuomas Melin
+url: "https://tuomasmelin.com"
+baseurl: ""
+timezone: Europe/Helsinki
+
+# TIL posts live in _posts/ and are published under /til/
+permalink: /til/:title/
+
+markdown: kramdown
+kramdown:
+  input: GFM
+highlighter: rouge
+
+plugins:
+  - jekyll-feed
+
+feed:
+  path: til/feed.xml
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
