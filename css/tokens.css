@@ -85,3 +85,84 @@ a:hover {
 	max-width: none;
 	padding: 1.25rem 2rem;
 }
+
+/* Discreet privacy notice: a footer link that opens a small card */
+.site-footer {
+	display: flex;
+	justify-content: center;
+	padding: 1.5rem 1rem;
+	font-size: .8rem;
+}
+
+.site-footer--overlay {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.privacy {
+	position: relative;
+	display: inline-block;
+}
+
+.privacy summary {
+	cursor: pointer;
+	list-style: none;
+	color: var(--subtle);
+}
+
+.privacy summary::-webkit-details-marker {
+	display: none;
+}
+
+.privacy summary:hover,
+.privacy[open] summary {
+	color: var(--accent);
+}
+
+.privacy-panel {
+	position: absolute;
+	bottom: calc(100% + .75rem);
+	left: 50%;
+	transform: translateX(-50%);
+	width: min(30rem, calc(100vw - 2rem));
+	padding: 1.25rem 1.5rem;
+	background: var(--surface);
+	color: var(--muted);
+	border: 1px solid var(--border);
+	border-radius: var(--radius);
+	box-shadow: var(--shadow);
+	font-size: .85rem;
+	font-weight: 400;
+	line-height: 1.6;
+	text-align: left;
+	z-index: 10;
+}
+
+.privacy-panel h2 {
+	font-family: var(--font-body);
+	font-size: .75rem;
+	font-weight: 500;
+	letter-spacing: .12em;
+	text-transform: uppercase;
+	color: var(--subtle);
+	margin: 0 0 .5rem;
+}
+
+.privacy-panel p {
+	margin: 0;
+}
+
+.privacy-panel p + p {
+	margin-top: .6rem;
+}
+
+.privacy-panel a {
+	color: var(--accent);
+}
+
+.privacy-updated {
+	font-size: .75rem;
+	color: var(--subtle);
+}

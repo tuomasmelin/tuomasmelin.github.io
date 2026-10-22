@@ -286,6 +286,10 @@ ul {
 	display: block;
 }
 
+.footer .privacy {
+	margin-top: .5rem;
+}
+
 .footer .fa-heart {
 	color: #E0605A;
 }
