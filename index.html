@@ -22,7 +22,11 @@
 			api_host: 'https://r.tuomasmelin.com',
 			ui_host: 'https://eu.posthog.com',
 			defaults: '2026-05-30',
-			person_profiles: 'identified_only'
+			person_profiles: 'never',
+            cookieless_mode: 'always',
+            autocapture: false,
+            disable_session_recording: true,
+            capture_pageview: true
 		})
 	</script>
 </head>
